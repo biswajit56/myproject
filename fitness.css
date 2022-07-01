@@ -1,0 +1,181 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    main {
+        height: 100vh;
+    }
+    
+    nav {
+        background: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    article {
+        display: grid;
+        gap: 10px;
+        grid-template-rows: 3fr 3fr;
+        grid-template-areas: "Box__1 Box__1 Box__3 " "Box__1 Box__1 Box__3" "Box__4 Box__4 Box__5""Box__4 Box__4 Box__5";
+    }
+    
+    nav a {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: #fff;
+        font-weight: bold;
+        padding: 1rem;
+        letter-spacing: .1rem;
+        transition: all .5s;
+    }
+    
+    nav a:hover {
+        background-color: #3cb371;
+        border-radius: 3px;
+        color: black;
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: black;
+    }
+    
+    .Box {
+        padding-top: 25rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-weight: bold;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .Box__1 {
+        grid-area: Box__1;
+        background-image: url("image/photo-5.jpg");
+    }
+    
+    .Box__3 {
+        grid-area: Box__3;
+        background-image: url("image/photo-2.jpg");
+    }
+    
+    .Box__4 {
+        grid-area: Box__4;
+        background-image: url("image/photo-3.jpg");
+    }
+    
+    .Box__5 {
+        grid-area: Box__5;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28)), url("image/photo-4.jpg");
+    }
+    
+    span {
+        display: block;
+        font-size: 1.5rem;
+        background-color: #f0f0f0;
+        padding: 1rem;
+        font-weight: 1;
+        color: black;
+        box-shadow: rgba(0, 0, 0, 0.18)0 3px 8px;
+        transition: all 0.3s;
+    }
+    
+    span:hover {
+        background-color: #9bd62e;
+        color: white;
+        font-weight: bold;
+    }
+    
+    h1 {
+        font-weight: 100;
+        font-size: 2.5rem;
+        margin: 1rem 0;
+        text-align: center;
+        letter-spacing: .5rem;
+    }
+    
+    .boxfinal,
+    form {
+        width: 300px;
+        margin: 3% auto;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    img {
+        width: 50%;
+    }
+    
+    .pag {
+        padding: 1rem;
+        font-size: 1.2rem;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .photo_1 {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .team1 {
+        background-color: antiquewhite;
+        width: 300px;
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+    
+    main2 {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        justify-content: center;
+    }
+    
+    .last {
+        text-align: center;
+        background: black;
+        color: white;
+        padding: 1rem;
+    }
+    
+    p {
+        padding: 1rem;
+        font-size: 1rem;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    form {
+        background: #16af65;
+        border-radius: 5px;
+    }
+    
+    form input {
+        padding: 1rem;
+        margin: 1rem;
+        border: none;
+        outline: none;
+    }
+    
+    form input:focus {
+        background: #f0f0f0;
+        padding: 1.2rem;
+    }
+    
+    .btn {
+        background: rgb(160, 41, 11);
+        font-weight: bold;
+        color: white;
+        border-radius: 5px;
+    }
